@@ -1,3 +1,5 @@
+![Habitica Icon](https://i.imgur.com/my5CKrm.png)
+
 # Habitica AutoInviter
 
 Habitica Autoinviter is a Python program that automates inviting users to your Habitica group based on specified criteria. It periodically checks for users looking for a party and invites those who meet the minimum level requirement.
