@@ -1,4 +1,4 @@
-![Habitica Icon](https://i.imgur.com/my5CKrm.png)
+![Habitica Icon](https://i.imgur.com/EHMdzlb.png)
 
 # Habitica AutoInviter
 
