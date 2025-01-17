@@ -54,3 +54,9 @@ Run the Habitica AutoInviter script:
 
 ```bash
 python invite_bot.py
+```
+---
+
+<div align="center">  
+<img src="https://m.media-amazon.com/images/I/51UxMHK-wAL.png" alt="Habitica Logo" width="50px">  
+</div>  
