@@ -5,7 +5,7 @@ import os
 
 
 def goodUsers(users, min_level):
-    # Filter users based on min_level and find the highest level user
+    # Filter users based on min_level and find the highest level user.
     invited_users = []
     max_level = 0
     max_level_user = None
@@ -21,7 +21,7 @@ def goodUsers(users, min_level):
 
 
 def inviteUser(userId, groupId, headers):
-    # Invite a user to the group
+    # Invite a user to the group.
     inviteURL = f'https://habitica.com/api/v3/groups/{groupId}/invite'
     payload = {'uuids': [userId]}
     response = requests.post(inviteURL, json=payload, headers=headers)
@@ -33,7 +33,7 @@ def inviteUser(userId, groupId, headers):
 
 
 def create_default_config(config_file):
-    # Create a default config file
+    # Create a default config file.
     default_config = {
         "userAPI": "your-user-api-key",
         "tokenAPI": "your-token-api-key",
@@ -48,7 +48,7 @@ def create_default_config(config_file):
 
 
 def load_config(config_file):
-    # Load config from JSON file
+    # Load config from JSON file.
     if not os.path.exists(config_file):
         create_default_config(config_file)
         raise SystemExit("Please update the config file and restart the script.")
@@ -56,7 +56,7 @@ def load_config(config_file):
     with open(config_file, 'r') as file:
         config = json.load(file)
     
-    # Check if the config is valid
+    # Check if the config is valid.
     required_keys = ["userAPI", "tokenAPI", "groupId", "delay", "min_level"]
     if any(config.get(key) in [None, "", f"your-{key.lower()}"] for key in required_keys):
         print("Config file contains placeholder values. Please update it.")
@@ -66,7 +66,7 @@ def load_config(config_file):
 
 
 def main():
-    # Main function to run the Habitica invite bot
+    # Main function to run the Habitica invite bot.
     config_file = 'config.json'
     config = load_config(config_file)
 
